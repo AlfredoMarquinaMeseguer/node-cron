@@ -1,4 +1,5 @@
 import cron from 'node-cron';
+import * as childProcess from 'child_process';
 
 cron.schedule(`*/1 * * * *`, async () => {
   console.log(`running your task...`);
